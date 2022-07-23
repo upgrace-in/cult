@@ -1,43 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cult Of Ether Disciples</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="index_files/css2" rel="stylesheet">
+  <link href="index_files/css2(1)" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index_files/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <div id="app">
+
+  </div>
+  <div id="root">
+    <div class="heroSection">
+      <!-- <header class="text-gray-600 ">
+        <div class="container mx-auto flex flex-wrap py-5 justify-between items-center"><a
+            class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="">
+            <h3 class="text-white font-garmani md:text-[38px] text-[28px] sm:text-[34px] font-normal"></h3>
+          </a>
+          <nav
+            class="navLinks  md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center space-x-7 text-white font-medium  hide-bar font-montserrat">
+            <a class="mr-5 hover:text-gray-300 text-lg text-white" href="#">Home</a>
+            <a
+              href="src/assets/pdf/BillionaireCat_Audit.pdf" target="_blank"
+              class="mr-5 hover:text-gray-300 text-lg text-white">Audit</a><a
+              href="#roadmap-section"
+              class="mr-5 hover:text-gray-300 text-lg text-white">Roadmap</a><a
+              href="#tokenomics-section"
+              class="mr-5 hover:text-gray-300 text-lg text-white">Tokenomics</a><a
+              href="#team-section"
+              class="mr-5 hover:text-gray-300 text-lg text-white">Team</a><a
+              href="src/assets/pdf/BillionaireCat_Whitepaper.pdf" target="_blank"
+              class="mr-5 hover:text-gray-300 text-lg text-white">Whitepaper</a>
+          </nav>
+          <div class="space-x-3 hide-bar"><a id="mint_link_id"
+              class="h-button-1 px-8 text-white inline-flex items-center text-xl  border-0 py-2  focus:outline-none  rounded  mt-4 md:mt-0"
+              href="cat-mint">MINT</a><a
+              class="h-button-2 px-8 inline-flex items-center  border-0 py-2  text-xl focus:outline-none text-white rounded  mt-4 md:mt-0"
+              href="stalking">STAKING</a></div>
+          <div>
+            <div class="text-white show-bar mb-3 cursor-pointer hover:text-gray-300"><svg width="32" height="22"
+                viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.5" y1="1.5" x2="30.5" y2="1.5" stroke="white" stroke-width="3" stroke-linecap="round">
+                </line>
+                <line x1="1.5" y1="19.9546" x2="30.5" y2="19.9546" stroke="white" stroke-width="3"
+                  stroke-linecap="round"></line>
+                <line x1="8.77295" y1="10.7273" x2="30.5002" y2="10.7273" stroke="white" stroke-width="3"
+                  stroke-linecap="round"></line>
+              </svg></div>
+          </div>
+        </div>
+      </header> -->
+      <!-- <section
+        class="sidebar z-10 fixed top-0 right-0 p-3 w-[100%] md:w-[30vw] lg:w-[24vw] h-screen shadow-2xl  list-none flex flex-col justify-start items-end  white-glassmorphism ease-in  show-sidebar ease-in">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+          class="absolute right-10 top-10 text-3xl cursor-pointer hover:text-gray-300 text-white" height="1em"
+          width="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z">
+          </path>
+          <path
+            d="M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z">
+          </path>
+        </svg>
+        <nav class="flex flex-col w-[100%] mt-32 space-y-5 space-x-5 text-white">
+          <a class="sidebar-links mr-5 hover:text-gray-300 ml-5  w-[100%] h-fit   " href="">Home</a>
+          <a href="#audit-section" class="sidebar-links mr-5 hover:text-gray-300 w-[100%] h-fit  ">Audit</a>
+          <a href="#roadmap-section" class="sidebar-links mr-5 hover:text-gray-300 w-[100%] h-fit  ">Roadmap</a>
+          <a href="#tokenomics-section" class="sidebar-links mr-5 hover:text-gray-300 w-[100%] h-fit  ">Tokenomics</a>
+          <a
+            href="#team-section" class="sidebar-links mr-5 hover:text-gray-300 w-[100%] h-fit  ">Team</a>
+          <a href="#whitepaper-section" class="sidebar-links mr-5 hover:text-gray-300 w-[100%] h-fit  ">Whitepaper</a>
+          <div class="space-x-3 flex flex-col space-y-4"><a
+              class="h-button-1 px-12 ml-3 w-fit text-white inline-flex items-center  border-0 py-2  focus:outline-none  rounded text-base mt-4 md:mt-0"
+              href="cat-mint" style="border-radius: 100px;">MINT</a><a
+              class="h-button-2 px-8 inline-flex w-fit items-center  border-0 py-2  focus:outline-none text-white rounded text-base mt-4 md:mt-0"
+              href="stalking">STAKING</a></div>
+        </nav>
+      </section> -->
+    </div>
+    <div class="container mx-auto text-white mt-[50px] text-center">
+      <div class="xl:grid grid-cols-2 gap-x-12 mb-[100px]">
+        <div class="content xl:max-w-[636px]">
+          <h3 class="font-garmani md:text-[63px] text-[34px] font-normal leading-[42px] sm:leading-[74px]">Cult Of Ether
+            Disciples</h3>
+          <p class="font-inter mt-4 text-[20px] mb-[37px]">TO WIN A TESLA MODEL S AND ALOT MORE UPTO 250K IN PRIZES</p>
+          <div class="mint-nft border-2 border-[#E4A841] rounded-2xl py-[57px] px-[40px]">
+            <h4 class="text-center font-garmani md:text-[61px] text-[34px] font-normal leading-[50px]">Mint a COED now
+            </h4>
+            <br>
+            <div id="updation_con" style="display: none;">
+              <h5 class="text-center mt-[5px] font-inter md:text-[26px] text-[20px] font-normal leading-[42px]"><span
+                  id="total_supply">0</span>/1000 NFTs</h5>
+              <h5 class="text-center mt-[5px] font-inter md:text-[26px] text-[20px] font-normal leading-[42px]">
+                1 COED costs <span id="mint_costs"></span> BNB
+              </h5>
+            </div>
+            <form class="mt-[38px]">
+              <!-- <div class="form-control"><input
+                  class="border-b-4 border-[#373737] w-full bg-transparent placeholder:text-white leading-[42px] sm:text-[26px] text-base focus:outline-none sm:pb-8 pb-4"
+                  type="text" placeholder="Balance"></div> -->
+              <div
+                class="main-quantity-box mt-12 flex border-b-4 border-[#373737] sm:pb-8 pb-4 items-center justify-between	">
+                <div class="form-control "><input
+                    class="sm:w-32 w-[4rem] bg-transparent placeholder:text-white leading-[42px] sm:text-[26px] text-base focus:outline-none "
+                    type="text" placeholder="Amount"></div>
+                <div class="quantity flex items-center"><span id="decrease_btn"
+                    class="text-base sm:text-[65px] sm:leading-[97px] sm:mr-12 mr-4"
+                    style="cursor: pointer;">-</span><span id="mint_count"
+                    class="text-base sm:text-[65px] sm:leading-[97px] sm:mr-12 mr-4">1</span><span id="increase_btn"
+                    class="text-base sm:text-[65px] sm:leading-[97px] " style="cursor: pointer;">+</span></div><button
+                  type="button" id="max_btn"
+                  class="max-button font-semibold	sm:text-[33px] text-base rounded-[10px] bg-white text-black py-2 sm:py-[9px] sm:px-[31px] px-2 sm:leading-[49px] leading-[20px]">Max</button>
+              </div>
+              <div class="">
+                <button id="connect_btn" type="button"
+                  class="md:text-[30px] text-[20px] mt-[50px] mb-[15px] font-bold bg-[#E4A841] w-full py-[19px] leading-[54px] rounded-xl block text-center">Connect
+                  Wallet</button>
+                <div id="user_address" style="display: none;"></div>
+                <div id="hash_proof"></div>
+                <button id="mint_btn" type="button" style="display: none;"
+                  class="md:text-[30px] text-[20px] mt-[50px] mb-[15px] font-bold bg-[#E4A841] w-full py-[19px] leading-[54px] rounded-xl block text-center">Mint</button>
+              </div><a id="mint_link" class="text-center text-[#A8A8A8] underline block" href="%7B#}">Make sure your
+                MetaMask wallet is connected</a>
+            </form>
+          </div>
+        </div>
+        <figure class="img-section xl:my-auto mt-28"><img class="ml-auto" src="img/0.png"></figure>
+      </div>
+    </div>
+    <footer class="text-gray-600 body-font py-3">
+      <div
+        class="container xl:px-5 px-2  py-8 mx-auto flex items-center lg:flex-row flex-col w-11/12  justify-between lg:space-y-0">
+        <div class="order-3 lg:order-1 mt-7 md:mt-0">
+          <p class="text-gray-400 text-sm text-center">Copyright @ 2022 Cult Of Ether Disciples. All Right Reserved</p>
+        </div>
+        <div class="flex space-x-5 k agy lg:order-2 "><a href="https://t.me/billionairecatportal"> <img
+              src="index_files/telegram.png" class="w-8" alt=""></a><a href="https://twitter.com/billionairecatt"><img
+              src="index_files/Twitter.svg" class="w-8" alt=""></a><a
+            href="https://instagram.com/billionairecat.io?r=nametag"><img src="index_files/instagram.png" class="w-8"
+              alt=""></a><a href="#"><img src="index_files/reddit.png" class="w-8" alt=""></a><a href="#"> <img
+              src="index_files/discord.png" class="w-8" alt=""></a></div>
+        <div class="space-x-10 text-gray-300 text-sm mt-10 md:mt-0 lg:order-3 "><a href="#">Terms of Use</a><a
+            href="#">Privacy
+            Policy</a></div>
+      </div>
+    </footer>
+  </div>
+  <script>window.global = window;</script>
+  <!-- MAINCODE -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/web3modal"></script>
+  <script src="https://unpkg.com/@walletconnect/web3-provider"></script>
+  <script src="js/mint.js"></script>
+</body>
+
 </html>
