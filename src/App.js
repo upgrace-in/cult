@@ -21,7 +21,7 @@ function App() {
   const rootHash = merkleTree.getRoot();
 
   useEffect(() => {
-    $('#mint_btn').click(() => {
+    $('#WLmint_btn').click(() => {
       const claimingAddress = $('#user_address').text()
       for (var i = 0; i < whitelistAddresses.length; i++) {
         if (claimingAddress === whitelistAddresses[i]) {
@@ -36,9 +36,10 @@ function App() {
         alert("You are not whitelisted !!!")
       } else {
         $('#hash_proof').html(proof)
+        $('#WLmint_btn').off()
       }
     })
-  })
+  }, [])
 
   return (
     <div className="App">

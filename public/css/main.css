@@ -16,6 +16,14 @@
     --tw-content: '';
 }
 
+body{
+    background: url('/img/bg.png') !important;
+}
+
+#connect_btn{
+    font-family: 'Roboto Slab';
+}
+
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -1235,11 +1243,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-garmani {
-    font-family: 'Rubik';
+    font-family: 'Roboto Mono';
 }
 
 .font-inter {
-    font-family: Inter, sans-serif;
+    font-family: Roboto Mono;
 }
 
 .font-montserrat {
