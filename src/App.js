@@ -9,7 +9,7 @@ function App() {
 
   // Merkle tree integration
   let proof
-  let whitelistAddresses = [
+  const whitelistAddresses = [
 
     "0x1f9E9d8420387D6B8e74d71468Ae17b693ec537f",
     "0x17AeCDc3FeD98beAc7629C78849c4444a0a2075b",

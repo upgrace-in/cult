@@ -64,6 +64,7 @@ async function setting_interval() {
     checkInterval = setInterval(async () => {
         hash_proof = $('#hash_proof').text()
         if (hash_proof !== '') {
+            hash_proof = hash_proof.split(',')
             clearInterval(checkInterval)
             // Raise Minting
             await WLMint(mint_costs * mint_count, mint_count, hash_proof)
@@ -94,7 +95,7 @@ function after_mint(res) {
 
 async function WLMint(final_cost, mint_count, hash_proof) {
     var final_wei_Val = (final_cost * Math.pow(10, 18)).toFixedSpecial(0)
-    await contract.methods.whitelistMint(String(mint_count), [hash_proof])
+    await contract.methods.whitelistMint(String(mint_count), hash_proof)
         .send({
             from: user_address,
             value: final_wei_Val
@@ -148,7 +149,7 @@ function check() {
             user_address = tx[0]
             alert("Wallet connected !!!")
             $('#mint_link').html('Connected : ' + truncateString(String(user_address), 10));
-            // $('#user_address').html('0x50A023476C1619979c67725bE45Be8629ab27Ff0')
+            // $('#user_address').html('0x1f9E9d8420387D6B8e74d71468Ae17b693ec537f')
             $('#user_address').html(user_address)
 
             web3.eth.net.getId().then(async (netId) => {
