@@ -1047,7 +1047,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-\[\#E4A841\] {
     --tw-border-opacity: 1;
-    border-color: rgb(228 168 65 / var(--tw-border-opacity));
+    border-color: white;
+    background-color: black;
+    /* border-color: rgb(228 168 65 / var(--tw-border-opacity)); */
 }
 
 .border-\[\#373737\] {
@@ -1066,7 +1068,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[\#E4A841\] {
     --tw-bg-opacity: 1;
-    background-color: rgb(228 168 65 / var(--tw-bg-opacity));
+    background-color: #AC0002;
+    /* background-color: rgb(228 168 65 / var(--tw-bg-opacity)); */
 }
 
 .bg-\[url\(\"\.\/assets\/cat-mobile\.png\"\)\] {
@@ -1379,7 +1382,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .leading-\[54px\] {
-    line-height: 54px;
+    line-height: 24px;
 }
 
 .leading-\[45px\] {
