@@ -10,8 +10,11 @@ function App() {
   // Merkle tree integration
   let proof
   let whitelistAddresses = [
-    "0x50A023476C1619979c67725bE45Be8629ab27Ff0",
-    "0x2f8F0588BC81aAfA41cB0CC847bd1FE255E3Ec56"
+
+    "0x1f9E9d8420387D6B8e74d71468Ae17b693ec537f",
+    "0x17AeCDc3FeD98beAc7629C78849c4444a0a2075b",
+    "0xDBf643Dd9EBc85B662378B6f0f306e2cbd3BF36d"
+
   ]
 
   const leafNodes = whitelistAddresses.map(addr => keccak256(addr));
