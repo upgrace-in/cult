@@ -5,6 +5,7 @@ let web3Modal, hash_proof, provider, web3, contract, user_address, checkInterval
 
 let publicMint = false
 var mint_count = 1;
+var max_count = 2;
 var mint_costs; // Change cost here
 var chainId = 4; // should be 4 for rinkeby and 1 for mainnet
 
@@ -33,13 +34,19 @@ function truncateString(str, length) {
     return str.length > length ? str.substring(0, length - 1) + '.....' : str
 }
 
-async function update_total_supply() {
+async function update_supply() {
+    // max_supply
+    await contract.methods.maxSupply().call().then(function (res, err) {
+        if (res) {
+            $('#max_supply').html(res)
+        }
+    });
     await contract.methods.totalSupply().call().then(function (res, err) {
         if (res) {
             $('#total_supply').html(res)
-            $("#box-total-count").show()
         }
     });
+    $("#box-total-count").show()
 }
 
 async function update_cost() {
@@ -78,6 +85,7 @@ async function update_publicMint() {
         await contract.methods.PublicSalePaused().call().then(function (res2, err) {
             if ((res !== false) && (res2 !== true)) {
                 publicMint = true
+                max_count = 1
             } else {
                 publicMint = false
             }
@@ -137,7 +145,7 @@ async function do_it_Asside() {
     await update_cost();
 
     // total supply
-    await update_total_supply();
+    await update_supply();
 
     $('#connect_btn').hide()
 
@@ -218,7 +226,7 @@ async function connectweb3() {
 
 function set_value(type) {
     if (type == 'increase') {
-        if (mint_count != 5) {
+        if (mint_count != max_count) {
             mint_count++;
         }
     } else {
