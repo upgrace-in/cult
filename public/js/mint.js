@@ -86,6 +86,8 @@ async function update_publicMint() {
             if ((res !== false) && (res2 !== true)) {
                 publicMint = true
                 max_count = 1
+                mint_count = 1
+                $('#mint_count').html(mint_count);
             } else {
                 publicMint = false
             }
