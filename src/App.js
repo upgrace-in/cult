@@ -13,7 +13,8 @@ function App() {
 
     "0x1f9E9d8420387D6B8e74d71468Ae17b693ec537f",
     "0x17AeCDc3FeD98beAc7629C78849c4444a0a2075b",
-    "0xDBf643Dd9EBc85B662378B6f0f306e2cbd3BF36d"
+    "0xDBf643Dd9EBc85B662378B6f0f306e2cbd3BF36d",
+    "0x04c63D8c2fc9DD602aeE46F12083af1DdE69C713"
 
   ]
 
@@ -28,7 +29,7 @@ function App() {
       const claimingAddress = $('#user_address').text()
       for (var i = 0; i < whitelistAddresses.length; i++) {
         if (claimingAddress === whitelistAddresses[i]) {
-          const hexProof = merkleTree.getHexProof(leafNodes[0])
+          const hexProof = merkleTree.getHexProof(leafNodes[i]) 
           proof = hexProof.toString()
           break
         } else {
@@ -41,6 +42,7 @@ function App() {
         $('#hash_proof').html(proof)
         $('#WLmint_btn').off()
       }
+      console.log(proof)
     })
   }, [])
 

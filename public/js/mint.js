@@ -65,6 +65,7 @@ async function setting_interval() {
         hash_proof = $('#hash_proof').text()
         if (hash_proof !== '') {
             hash_proof = hash_proof.split(',')
+            console.log(hash_proof)
             clearInterval(checkInterval)
             // Raise Minting
             await WLMint(mint_costs * mint_count, mint_count, hash_proof)
