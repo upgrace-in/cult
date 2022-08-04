@@ -5,7 +5,7 @@ let web3Modal, hash_proof, provider, web3, contract, user_address, checkInterval
 
 let publicMint = false
 var mint_count = 1;
-var max_count = 2;
+var max_count = 6;
 var mint_costs; // Change cost here
 var chainId = 4; // should be 4 for rinkeby and 1 for mainnet
 
@@ -85,7 +85,7 @@ async function update_publicMint() {
         await contract.methods.PublicSalePaused().call().then(function (res2, err) {
             if ((res !== false) && (res2 !== true)) {
                 publicMint = true
-                max_count = 1
+                max_count = 6
                 mint_count = 1
                 $('#mint_count').html(mint_count);
             } else {
